@@ -1,7 +1,5 @@
 package com.hcl.payment;
 
-// --- Interfaces and Abstract Classes ---
-
 interface Refundable {
     void processRefund(double amount);
 }
@@ -15,16 +13,12 @@ abstract class Payment {
         this.amount = amount;
     }
 
-    // Abstract method: MUST be implemented by child classes
     public abstract void processPayment();
 
-    // Concrete method: inherited by child classes
     public void printReceipt() {
         System.out.println("Receipt for Txn: " + transactionId + " | Amount: $" + amount);
     }
 }
-
-// --- Concrete Classes ---
 
 class CardPayment extends Payment implements Refundable {
     private String cardNumber;
@@ -69,15 +63,11 @@ class CashPayment extends Payment {
     @Override
     public void processPayment() {
         System.out.println("Processing Cash Payment at Counter.");
-        System.out.println("Status: SUCCESS (Physical Cash Received)");
+        System.out.println("Status: SUCCESS");
     }
 }
 
-// --- Main Demonstration Class ---
-
 public class PaymentDemo {
-
-    // Compile-time Polymorphism (Method Overloading)
     public void processReceipt(Payment p) {
         p.printReceipt();
     }
@@ -90,9 +80,8 @@ public class PaymentDemo {
     }
 
     public static void main(String[] args) {
-        System.out.println("=== Payment Processing System ===");
+        System.out.println("Payment Processing System");
 
-        // Array of abstract type 'Payment', holding various concrete subclasses
         Payment[] transactions = {
             new CardPayment("TXN001", 150.00, "1234567890124321"),
             new UPIPayment("TXN002", 45.50, "user@bank"),
@@ -102,21 +91,17 @@ public class PaymentDemo {
         PaymentDemo demo = new PaymentDemo();
 
         for (Payment payment : transactions) {
-            System.out.println("\n-----------------------------");
-            // Runtime Polymorphism (Method Overriding)
-            // Java decides at runtime which processPayment() to call based on the object type
+            System.out.println("-----------------------------");
             payment.processPayment();
             
-            // Overloaded method call
             demo.processReceipt(payment);
 
-            // Checking for Interface implementation using instanceof
             if (payment instanceof Refundable) {
-                System.out.println("-> Note: This transaction is eligible for refunds.");
-                Refundable ref = (Refundable) payment; // Downcasting safely
+                System.out.println("Note: This transaction is eligible for refunds.");
+                Refundable ref = (Refundable) payment;
                 ref.processRefund(payment.amount);
             }
         }
-        System.out.println("\n-----------------------------");
+        System.out.println("-----------------------------");
     }
 }

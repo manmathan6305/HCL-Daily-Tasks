@@ -1,100 +1,91 @@
 import java.util.Scanner;
 
 public class ATMSimulator {
-    private static final int CORRECT_PIN = 1234;
-    private static final int MAX_ATTEMPTS = 3;
-    private static double balance = 1000.00; // Starting balance
+    private static final int PIN = 1234;
+    private static final int MAX_TRIES = 3;
+    private static double balance = 1000.00;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("=== Welcome to HCL Bank ATM ===");
+        System.out.println("Welcome to the ATM");
 
-        // 1. PIN Authentication using While Loop
         int attempts = 0;
         boolean authenticated = false;
 
-        while (attempts < MAX_ATTEMPTS) {
-            System.out.print("Please enter your 4-digit PIN: ");
+        while (attempts < MAX_TRIES) {
+            System.out.print("Enter your PIN: ");
             if (scanner.hasNextInt()) {
-                int enteredPin = scanner.nextInt();
-                if (enteredPin == CORRECT_PIN) {
+                if (scanner.nextInt() == PIN) {
                     authenticated = true;
                     break;
                 } else {
                     attempts++;
-                    System.out.println("Incorrect PIN. Attempts remaining: " + (MAX_ATTEMPTS - attempts));
+                    System.out.println("Incorrect PIN.");
                 }
             } else {
-                System.out.println("Invalid input. Please enter numbers only.");
-                scanner.next(); // Clear invalid input
+                System.out.println("Invalid input.");
+                scanner.next();
                 attempts++;
             }
         }
 
         if (!authenticated) {
-            System.out.println("Maximum attempts reached. Account locked for security.");
+            System.out.println("Account locked.");
             scanner.close();
-            return; // Exit program
+            return;
         }
 
-        // 2. ATM Menu using Do-While Loop and Switch Statement
         int choice = 0;
         do {
-            System.out.println("\n--- Main Menu ---");
-            System.out.println("1. Balance Enquiry");
-            System.out.println("2. Deposit");
-            System.out.println("3. Withdrawal");
-            System.out.println("4. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.println("\n1. Balance\n2. Deposit\n3. Withdraw\n4. Exit");
+            System.out.print("Choice: ");
 
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
 
                 switch (choice) {
                     case 1:
-                        System.out.printf("Current Balance: $%.2f\n", balance);
+                        System.out.printf("Balance: $%.2f\n", balance);
                         break;
                     case 2:
-                        System.out.print("Enter amount to deposit: $");
+                        System.out.print("Amount to deposit: ");
                         if (scanner.hasNextDouble()) {
-                            double deposit = scanner.nextDouble();
-                            if (deposit > 0) {
-                                balance += deposit;
-                                System.out.printf("Successfully deposited $%.2f. New balance: $%.2f\n", deposit, balance);
+                            double amount = scanner.nextDouble();
+                            if (amount > 0) {
+                                balance += amount;
+                                System.out.printf("New balance: $%.2f\n", balance);
                             } else {
-                                System.out.println("Deposit amount must be greater than zero.");
+                                System.out.println("Invalid amount.");
                             }
                         } else {
-                            System.out.println("Invalid amount format.");
-                            scanner.next(); // Clear input
+                            System.out.println("Invalid input.");
+                            scanner.next();
                         }
                         break;
                     case 3:
-                        System.out.print("Enter amount to withdraw: $");
+                        System.out.print("Amount to withdraw: ");
                         if (scanner.hasNextDouble()) {
-                            double withdrawal = scanner.nextDouble();
-                            if (withdrawal > 0 && withdrawal <= balance) {
-                                balance -= withdrawal;
-                                System.out.printf("Successfully withdrew $%.2f. New balance: $%.2f\n", withdrawal, balance);
-                            } else if (withdrawal > balance) {
-                                System.out.println("Insufficient funds.");
+                            double amount = scanner.nextDouble();
+                            if (amount > 0 && amount <= balance) {
+                                balance -= amount;
+                                System.out.printf("New balance: $%.2f\n", balance);
                             } else {
-                                System.out.println("Withdrawal amount must be greater than zero.");
+                                System.out.println("Invalid amount or insufficient funds.");
                             }
                         } else {
-                            System.out.println("Invalid amount format.");
-                            scanner.next(); // Clear input
+                            System.out.println("Invalid input.");
+                            scanner.next();
                         }
                         break;
                     case 4:
-                        System.out.println("Thank you for using HCL Bank ATM. Goodbye!");
+                        System.out.println("Goodbye.");
                         break;
                     default:
-                        System.out.println("Invalid choice. Please select 1-4.");
+                        System.out.println("Invalid choice.");
                 }
             } else {
-                System.out.println("Invalid choice format. Please enter a number.");
-                scanner.next(); // Clear invalid input
+                System.out.println("Invalid input.");
+                scanner.next();
             }
         } while (choice != 4);
 

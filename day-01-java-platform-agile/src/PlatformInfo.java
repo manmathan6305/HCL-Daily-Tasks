@@ -1,27 +1,20 @@
 public class PlatformInfo {
     public static void main(String[] args) {
-        System.out.println("=== Java Platform & Environment Info ===");
+        System.out.println("Java Environment Info");
         
-        // Java Version Info
-        System.out.println("Java Version: " + System.getProperty("java.version"));
-        System.out.println("Java Vendor: " + System.getProperty("java.vendor"));
+        System.out.println("Version: " + System.getProperty("java.version"));
+        System.out.println("Vendor: " + System.getProperty("java.vendor"));
+        System.out.println("OS: " + System.getProperty("os.name") + " " + System.getProperty("os.version"));
         
-        // Operating System Info
-        System.out.println("Operating System: " + System.getProperty("os.name") + " " + System.getProperty("os.version"));
-        
-        // Hardware/Runtime Info
         Runtime runtime = Runtime.getRuntime();
-        System.out.println("Available Processors: " + runtime.availableProcessors());
+        System.out.println("Processors: " + runtime.availableProcessors());
         
-        // Memory Info (Converted from bytes to Megabytes)
-        long maxMemoryMB = runtime.maxMemory() / (1024 * 1024);
-        long freeMemoryMB = runtime.freeMemory() / (1024 * 1024);
-        long totalMemoryMB = runtime.totalMemory() / (1024 * 1024);
+        long maxMB = runtime.maxMemory() / (1024 * 1024);
+        long freeMB = runtime.freeMemory() / (1024 * 1024);
+        long totalMB = runtime.totalMemory() / (1024 * 1024);
         
-        System.out.println("Max Heap Memory: " + maxMemoryMB + " MB");
-        System.out.println("Total Allocated Memory: " + totalMemoryMB + " MB");
-        System.out.println("Free Memory in Allocation: " + freeMemoryMB + " MB");
-        
-        System.out.println("========================================");
+        System.out.println("Max Memory: " + maxMB + " MB");
+        System.out.println("Total Allocated: " + totalMB + " MB");
+        System.out.println("Free Allocated: " + freeMB + " MB");
     }
 }
