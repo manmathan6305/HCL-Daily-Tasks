@@ -9,17 +9,17 @@ Welcome to my HCL technical training repository! This tracks my progress and tas
 - Object-oriented principles
 
 ## Progress
-Status: In progress
+Status: Completed
 
 ## Daily Tasks
 
 | Day | Topic | Status | Folder |
 | --- | --- | --- | --- |
-| Day 1 | Java Platform & Agile/Scrum | Not Started | [Day 1](./day-01-java-platform-agile) |
-| Day 2 | Language Fundamentals & Git | Not Started | [Day 2](./day-02-language-fundamentals-git) |
-| Day 3 | Control Flow & Maven | Not Started | [Day 3](./day-03-control-flow-maven) |
-| Day 4 | OOP Concepts & IDE Debugging | Not Started | [Day 4](./day-04-oop-debugging) |
-| Day 5 | Inheritance, Polymorphism & Git Merge | Not Started | [Day 5](./day-05-inheritance-polymorphism) |
+| Day 1 | Java Platform & Agile/Scrum | Completed | [Day 1](./day-01-java-platform-agile) |
+| Day 2 | Language Fundamentals & Git | Completed | [Day 2](./day-02-language-fundamentals-git) |
+| Day 3 | Control Flow & Maven | Completed | [Day 3](./day-03-control-flow-maven) |
+| Day 4 | OOP Concepts & IDE Debugging | Completed | [Day 4](./day-04-oop-debugging) |
+| Day 5 | Inheritance, Polymorphism & Git Merge | Completed | [Day 5](./day-05-inheritance-polymorphism) |
 
 Each folder has a README, some notes, and code in the `src/` folder.
 
