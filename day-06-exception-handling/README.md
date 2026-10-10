@@ -1,6 +1,6 @@
 # Day 6: Exception Handling + AI-Assisted Debugging
 
-**Status:** Completed
+**Status:**    Completed 
 **Progress:** 100%
 
 ## Learning Objectives
@@ -11,17 +11,16 @@ By the end of this day, you will be able to:
 - Implement Exception chaining without losing the original stack trace.
 - Read and interpret Java stack traces.
 - Use AI tools like GitHub Copilot to debug stack traces and verify their outputs.
-
 ## Main Points Summary
 
-| Concept | Description |
-|---------|-------------|
-| **`try-catch-finally`** | Used to handle exceptions gracefully without crashing. `try` contains risky code, `catch` handles the error, `finally` runs cleanup code regardless of success or failure. |
-| **`throw` vs `throws`** | `throw` explicitly triggers an exception inside a method. `throws` declares in the method signature that the method might throw exceptions. |
-| **Checked Exceptions** | Inherit from `Exception` (but not `RuntimeException`). Checked at compile time. For recoverable, external errors (e.g., `IOException`). |
-| **Unchecked Exceptions** | Inherit from `RuntimeException`. Not checked at compile time. For programming logic errors (e.g., `NullPointerException`). |
-| **Exception Chaining** | Passing a caught exception as the `cause` to a new exception to preserve the original stack trace while providing higher-level context. |
-| **Multi-catch Block** | Catching multiple unrelated exception types in a single block to reduce code duplication (e.g., `catch (NumberFormatException \| IllegalStateException e)`). |
+| Concept | Description | Key Details |
+|---------|-------------|-------------|
+| **`try-catch-finally`** | Block structure to gracefully handle exceptions. | `try` encloses risky code, `catch` handles the error, `finally` executes unconditionally (usually for cleanup). |
+| **`throw` vs `throws`** | Mechanism to trigger and declare exceptions. | `throw` triggers an instance inside a method body. `throws` is part of the method signature declaring possible exceptions. |
+| **Checked Exceptions** | Exceptions checked at compile time. | Inherit from `Exception` (but not `RuntimeException`). Must be caught or declared. Used for recoverable external issues. |
+| **Unchecked Exceptions**| Exceptions not checked at compile time. | Inherit from `RuntimeException`. Used for programming logic or input errors (e.g., `NullPointerException`). |
+| **Exception Chaining** | Linking a caught exception to a new one. | Preserves the original stack trace via constructors like `new CustomException(message, cause)`. |
+| **Multi-catch Block** | Catching multiple exceptions in one block. | E.g., `catch (NumberFormatException \| IllegalStateException e)`. Alternatives cannot be related by subclassing. |
 
 ## Estimated Study Time
 Total: approximately 3 hours 30 minutes.
