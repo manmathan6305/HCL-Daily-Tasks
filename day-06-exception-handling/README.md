@@ -1,7 +1,7 @@
 # Day 6: Exception Handling + AI-Assisted Debugging
 
-**Status:** Not Started  
-**Progress:** 0%
+**Status:** Completed
+**Progress:** 100%
 
 ## Learning Objectives
 By the end of this day, you will be able to:
@@ -11,6 +11,17 @@ By the end of this day, you will be able to:
 - Implement Exception chaining without losing the original stack trace.
 - Read and interpret Java stack traces.
 - Use AI tools like GitHub Copilot to debug stack traces and verify their outputs.
+
+## Main Points Summary
+
+| Concept | Description |
+|---------|-------------|
+| **`try-catch-finally`** | Used to handle exceptions gracefully without crashing. `try` contains risky code, `catch` handles the error, `finally` runs cleanup code regardless of success or failure. |
+| **`throw` vs `throws`** | `throw` explicitly triggers an exception inside a method. `throws` declares in the method signature that the method might throw exceptions. |
+| **Checked Exceptions** | Inherit from `Exception` (but not `RuntimeException`). Checked at compile time. For recoverable, external errors (e.g., `IOException`). |
+| **Unchecked Exceptions** | Inherit from `RuntimeException`. Not checked at compile time. For programming logic errors (e.g., `NullPointerException`). |
+| **Exception Chaining** | Passing a caught exception as the `cause` to a new exception to preserve the original stack trace while providing higher-level context. |
+| **Multi-catch Block** | Catching multiple unrelated exception types in a single block to reduce code duplication (e.g., `catch (NumberFormatException \| IllegalStateException e)`). |
 
 ## Estimated Study Time
 Total: approximately 3 hours 30 minutes.
