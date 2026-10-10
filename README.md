@@ -20,7 +20,6 @@ Status: Completed
 | Day 3 | Control Flow & Maven | Completed | [Day 3](./day-03-control-flow-maven) |
 | Day 4 | OOP Concepts & IDE Debugging | Completed | [Day 4](./day-04-oop-debugging) |
 | Day 5 | Inheritance, Polymorphism & Git Merge | Completed | [Day 5](./day-05-inheritance-polymorphism) |
-| Day 6 | Exception Handling + AI-assisted Debugging | Not Started | [Day 6](./day-06-exception-handling) |
 
 Each folder has a README, some notes, and code in the `src/` folder.
 
