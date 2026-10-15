@@ -115,7 +115,7 @@ public class LibraryWaitlistApp {
         Path current = Paths.get("").toAbsolutePath();
         String deliverablePath = current.endsWith("day-07-collections-framework-part1")
                 ? "deliverables/timing-table.md"
-                : "day-07-collections-framework-part1/deliverables/timing-table.md";
+                : "daily-tasks/day-07-collections-framework-part1/deliverables/timing-table.md";
         CollectionPerformanceBenchmark.exportMarkdownReport(benchmarkResults, deliverablePath);
         System.out.println("Benchmark deliverable exported to: " + deliverablePath);
 
