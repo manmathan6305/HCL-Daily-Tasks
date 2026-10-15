@@ -23,6 +23,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 5 | Daily Task 5 | Inheritance & Polymorphism + Branching | Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` | [Day 5](./day-05-inheritance-polymorphism) |
 | Day 6 | Daily Task 6 | Exception Handling + AI Debugging | Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` | [Day 6](./day-06-exception-handling) |
 | Day 7 | Daily Task 7 | Collections Framework — Part 1 | Completed | Library Waitlist: ArrayList catalogue, LinkedHashSet de-dup, ArrayDeque waitlist, PriorityQueue faculty-first, Iterator remove for overdue items, ArrayList vs LinkedList benchmark | `day-7: collections-framework` | [Day 7](./day-07-collections-framework-part1) |
+| Day 8 | Daily Task 8 | Collections Framework — Part 2 | Completed | Employee Directory: HashMap lookup, frequency count with merge, TreeMap department report, Comparable by id, top 5 salary Comparator chain, missing-hashCode bug demo and fix | `day-8: collections framework` | [Day 8](./day-08-collections-framework-part2) |
 
 ## 📁 Repository Directory Structure
 
