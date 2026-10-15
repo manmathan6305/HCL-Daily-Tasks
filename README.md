@@ -1,16 +1,16 @@
 # 🚀 HCL Core Java & Engineering Track - Daily Hands-on Tasks
 
-This repository tracks the sequential daily hands-on coding tasks for the HCL Java Full Stack Training Program (Week 1 / Sprint 1).
+This repository tracks the sequential daily hands-on coding tasks for the HCL Java Full Stack Training Program (Week 1 & 2 / Sprint 1).
 
 ## 🎯 Program Objective
-The daily tasks are designed to build progressive competency in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, Git workflow management, clean code principles, and debugging methodologies.
+The daily tasks are designed to build progressive competency in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, Git workflow management, clean code principles, collections architecture, generic programming, and debugging methodologies.
 
 ## 🛠️ Technologies & Tools Used
 - **Language:** Java 21 (LTS)
 - **Build Tool:** Apache Maven (with multi-profile builds)
 - **Version Control:** Git & GitHub
 - **IDE / Environment:** Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts:** JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, AI-Assisted Debugging
+- **Key Concepts:** JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Collections Framework (List, Set, Queue, Map), Generics & PECS, Resource Management (AutoCloseable), AI-Assisted Debugging
 
 ## 📅 Daily Progress Tracker
 
@@ -31,15 +31,103 @@ The daily tasks are designed to build progressive competency in modern Java deve
 ```text
 HCL-Daily-Tasks/
 ├── day-01-java-platform-agile/
+│   ├── notes/
+│   │   ├── agile-scrum-basics.md
+│   │   └── java-platform-basics.md
+│   ├── src/
+│   │   └── PlatformInfo.java
+│   └── README.md
 ├── day-02-language-fundamentals-git/
+│   ├── notes/
+│   │   ├── git-fundamentals.md
+│   │   └── language-fundamentals.md
+│   ├── src/
+│   │   └── MonthlyUsageAnalyser.java
+│   └── README.md
 ├── day-03-control-flow-maven/
+│   ├── notes/
+│   │   ├── control-flow.md
+│   │   └── maven-basics.md
+│   ├── src/
+│   │   └── main/java/ATMSimulator.java
+│   ├── pom.xml
+│   └── README.md
 ├── day-04-oop-debugging/
+│   ├── notes/
+│   │   ├── debugging-guide.md
+│   │   └── oop-concepts.md
+│   ├── src/
+│   │   └── com/hcl/bank/BankAccount.java
+│   └── README.md
 ├── day-05-inheritance-polymorphism/
+│   ├── notes/
+│   │   ├── git-branching-merging.md
+│   │   ├── inheritance.md
+│   │   └── polymorphism.md
+│   ├── src/
+│   │   └── com/hcl/payment/
+│   │       ├── CardPayment.java
+│   │       ├── CashPayment.java
+│   │       ├── Payment.java
+│   │       ├── PaymentDemo.java
+│   │       ├── Refundable.java
+│   │       └── UPIPayment.java
+│   └── README.md
 ├── day-06-exception-handling/
+│   ├── deliverables/
+│   │   └── .gitkeep
+│   ├── notes/
+│   │   ├── ai-stack-trace-debugging.md
+│   │   ├── checked-vs-unchecked.md
+│   │   └── exception-handling.md
+│   ├── src/
+│   │   ├── exceptions/
+│   │   │   ├── InsufficientStockException.java
+│   │   │   └── InvalidQuantityException.java
+│   │   └── OrderProcessor.java
+│   └── README.md
+├── day-07-collections-framework-part1/
+│   ├── deliverables/
+│   │   └── timing-table.md
+│   ├── notes/
+│   │   ├── collections-overview.md
+│   │   ├── iterators-and-concurrency.md
+│   │   ├── list-vs-set-internals.md
+│   │   └── queues-and-deques.md
+│   ├── src/
+│   │   ├── benchmark/CollectionPerformanceBenchmark.java
+│   │   ├── model/Book.java, PatronType.java, ReservationRequest.java
+│   │   ├── service/LibraryWaitlistService.java
+│   │   └── LibraryWaitlistApp.java
+│   └── README.md
+├── day-08-collections-framework-part2/
+│   ├── notes/
+│   │   ├── comparable-vs-comparator.md
+│   │   ├── hashcode-and-equals-contract.md
+│   │   └── map-internals-and-implementations.md
+│   ├── src/
+│   │   ├── model/Department.java, Employee.java
+│   │   ├── service/EmployeeDirectoryService.java, MissingHashCodeBugDemo.java
+│   │   └── EmployeeDirectory.java
+│   └── README.md
+├── day-09-generics/
+│   ├── data/
+│   │   └── products.csv
+│   ├── notes/
+│   │   ├── bounded-types-and-pecs.md
+│   │   ├── generics-fundamentals-type-erasure.md
+│   │   └── try-with-resources-and-autocloseable.md
+│   ├── src/
+│   │   ├── model/Product.java
+│   │   ├── repository/CrudRepository.java, InMemoryRepository.java
+│   │   ├── resource/AuditLoggerResource.java, DatabaseConnectionResource.java
+│   │   ├── toolkit/Box.java, GenericToolkit.java, Pair.java
+│   │   └── GenericApplication.java
+│   └── README.md
 └── README.md
 ```
 
-## 🔄 Git Workflow
+## 🔁 Git Workflow
 ```bash
 git status
 git add .
