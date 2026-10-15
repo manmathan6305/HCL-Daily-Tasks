@@ -1,9 +1,9 @@
 # Agile & Scrum Basics
 
-## 1. What is Agile?
+## 1. Agile?
 Agile is an iterative approach to software development and project management. Instead of delivering a massive project all at once (Waterfall), Agile focuses on delivering small, usable pieces of software incrementally.
 
-## 2. What is Scrum?
+## 2. Scrum?
 Scrum is the most popular framework for implementing Agile. It provides specific roles, ceremonies, and artifacts to help teams work together.
 
 ## 3. Scrum Roles
