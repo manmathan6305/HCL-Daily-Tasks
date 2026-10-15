@@ -1,0 +1,8 @@
+id,name,category,price,stock
+PRD-001,MacBook Pro 16,Electronics,2499.99,15
+PRD-002,Dell XPS 15,Electronics,1899.50,22
+PRD-003,Ergonomic Office Chair,Furniture,349.00,40
+PRD-004,Standing Desk Adjustable,Furniture,599.99,18
+PRD-005,Wireless Bluetooth Mouse,Accessories,49.99,120
+PRD-006,Mechanical RGB Keyboard,Accessories,129.99,65
+PRD-007,UltraWide 34-Inch Monitor,Electronics,799.00,30
