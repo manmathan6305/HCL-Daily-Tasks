@@ -56,7 +56,7 @@ Detailed conceptual guides are provided in the `notes/` directory:
 ## Project Structure & Deliverables
 
 ```text
-day-08-collections-framework-part2/
+daily-tasks/day-08-collections-framework-part2/
 ├── notes/
 │   ├── comparable-vs-comparator.md
 │   ├── hashcode-and-equals-contract.md
@@ -92,9 +92,9 @@ day-08-collections-framework-part2/
 
 ## Setup and Run Instructions
 
-1. Navigate to the `day-08-collections-framework-part2` directory:
+1. Navigate to the `daily-tasks/day-08-collections-framework-part2` directory:
    ```bash
-   cd day-08-collections-framework-part2
+   cd daily-tasks/day-08-collections-framework-part2
    ```
 2. Compile all source files:
    ```bash

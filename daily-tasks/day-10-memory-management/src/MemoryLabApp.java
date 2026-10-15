@@ -109,7 +109,7 @@ public class MemoryLabApp {
         Path current = Paths.get("").toAbsolutePath();
         Path outPath = current.endsWith("day-10-memory-management")
                 ? Paths.get("deliverables", "memory-lab-results.md")
-                : Paths.get("day-10-memory-management", "deliverables", "memory-lab-results.md");
+                : Paths.get("daily-tasks", "day-10-memory-management", "deliverables", "memory-lab-results.md");
 
         try {
             if (outPath.getParent() != null) Files.createDirectories(outPath.getParent());

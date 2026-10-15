@@ -40,7 +40,7 @@ Detailed notes are provided in the `notes/` directory:
 
 ## Setup and Run Instructions
 This project uses standard Java 21 syntax.
-1. Navigate to the `day-06-exception-handling` directory.
+1. Navigate to the `daily-tasks/day-06-exception-handling` directory.
 2. Compile the application:
    ```bash
    javac src/exceptions/*.java src/OrderProcessor.java
@@ -125,7 +125,7 @@ Use this prompt in GitHub Copilot Chat with a stack trace of your choice:
 - [ ] Screenshot of Copilot Chat explaining a stack trace saved in `deliverables/`.
 
 ## Common Errors & Troubleshooting
-- **`cannot find symbol` during compile:** Ensure you are in the `day-06-exception-handling` directory and running `javac src/exceptions/*.java src/OrderProcessor.java`.
+- **`cannot find symbol` during compile:** Ensure you are in the `daily-tasks/day-06-exception-handling` directory and running `javac src/exceptions/*.java src/OrderProcessor.java`.
 - **`Alternatives in a multi-catch statement cannot be related by subclassing`:** Make sure the exceptions inside a multi-catch block (e.g., `NumberFormatException | NullPointerException`) don't inherit from one another.
 
 ## Self-Assessment Questions

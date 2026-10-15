@@ -16,36 +16,36 @@ The daily tasks are designed to build progressive competency in modern Java deve
 
 | Day | Task | Topic | Status | Short Description | Git Commit Message | Folder |
 | --- | --- | --- | --- | --- | --- | --- |
-| Day 1 | Daily Task 1 | Java Platform Basics + Agile/Scrum | Completed | JDK 21 installation, JVM PlatformInfo inspector, bytecode disassembly with `javap -c` | `day-1: java-platform-basics` | [Day 1](./day-01-java-platform-agile) |
-| Day 2 | Daily Task 2 | Language Fundamentals + Git Fundamentals | Completed | Monthly Usage Analyser with 1D/2D arrays, slab billing constants, overflow prevention, ternary grades | `day-2: language-fundamentals` | [Day 2](./day-02-language-fundamentals-git) |
-| Day 3 | Daily Task 3 | Control Flow + Maven | Completed | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging & dev/prod profiles | `day-3: control-flow` | [Day 3](./day-03-control-flow-maven) |
-| Day 4 | Daily Task 4 | OOP Concepts + IDE & Debugging | Completed | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints & hot code replace | `day-4: oop-concepts` | [Day 4](./day-04-oop-debugging) |
-| Day 5 | Daily Task 5 | Inheritance & Polymorphism + Branching | Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` | [Day 5](./day-05-inheritance-polymorphism) |
-| Day 6 | Daily Task 6 | Exception Handling + AI Debugging | Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` | [Day 6](./day-06-exception-handling) |
-| Day 7 | Daily Task 7 | Collections Framework — Part 1 | Completed | Library Waitlist: ArrayList catalogue, LinkedHashSet de-dup, ArrayDeque waitlist, PriorityQueue faculty-first, Iterator remove for overdue items, ArrayList vs LinkedList benchmark | `day-7: collections-framework` | [Day 7](./day-07-collections-framework-part1) |
-| Day 8 | Daily Task 8 | Collections Framework — Part 2 | Completed | Employee Directory: HashMap lookup, frequency count with merge, TreeMap department report, Comparable by id, top 5 salary Comparator chain, missing-hashCode bug demo and fix | `day-8: collections framework` | [Day 8](./day-08-collections-framework-part2) |
-| Day 9 | Daily Task 9 | Generics & Try-With-Resources | Completed | Generic Toolkit: Pair<K,V>, Box<T extends Number>, <T extends Comparable<T>> max(), PECS wildcards, CSV ingestion with try-with-resources, AutoCloseable LIFO close order, generic CrudRepository<T,ID> | `day-9: generics` | [Day 9](./day-09-generics) |
-| Day 10 | Daily Task 10 | Memory Management & Garbage Collection | Completed | Memory Lab: StackOverflowError depth (-Xss), OutOfMemoryError (-Xmx), String += vs StringBuilder benchmark, -Xlog:gc analysis, Integer cache pitfall, Stack/Heap architecture diagram | `day-10: memory-management` | [Day 10](./day-10-memory-management) |
+| Day 1 | Daily Task 1 | Java Platform Basics + Agile/Scrum | Completed | JDK 21 installation, JVM PlatformInfo inspector, bytecode disassembly with `javap -c` | `day-1: java-platform-basics` | [Day 1](./daily-tasks/day-01-java-platform-agile) |
+| Day 2 | Daily Task 2 | Language Fundamentals + Git Fundamentals | Completed | Monthly Usage Analyser with 1D/2D arrays, slab billing constants, overflow prevention, ternary grades | `day-2: language-fundamentals` | [Day 2](./daily-tasks/day-02-language-fundamentals-git) |
+| Day 3 | Daily Task 3 | Control Flow + Maven | Completed | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging & dev/prod profiles | `day-3: control-flow` | [Day 3](./daily-tasks/day-03-control-flow-maven) |
+| Day 4 | Daily Task 4 | OOP Concepts + IDE & Debugging | Completed | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints & hot code replace | `day-4: oop-concepts` | [Day 4](./daily-tasks/day-04-oop-debugging) |
+| Day 5 | Daily Task 5 | Inheritance & Polymorphism + Branching | Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` | [Day 5](./daily-tasks/day-05-inheritance-polymorphism) |
+| Day 6 | Daily Task 6 | Exception Handling + AI Debugging | Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` | [Day 6](./daily-tasks/day-06-exception-handling) |
+| Day 7 | Daily Task 7 | Collections Framework — Part 1 | Completed | Library Waitlist: ArrayList catalogue, LinkedHashSet de-dup, ArrayDeque waitlist, PriorityQueue faculty-first, Iterator remove for overdue items, ArrayList vs LinkedList benchmark | `day-7: collections-framework` | [Day 7](./daily-tasks/day-07-collections-framework-part1) |
+| Day 8 | Daily Task 8 | Collections Framework — Part 2 | Completed | Employee Directory: HashMap lookup, frequency count with merge, TreeMap department report, Comparable by id, top 5 salary Comparator chain, missing-hashCode bug demo and fix | `day-8: collections framework` | [Day 8](./daily-tasks/day-08-collections-framework-part2) |
+| Day 9 | Daily Task 9 | Generics & Try-With-Resources | Completed | Generic Toolkit: Pair<K,V>, Box<T extends Number>, <T extends Comparable<T>> max(), PECS wildcards, CSV ingestion with try-with-resources, AutoCloseable LIFO close order, generic CrudRepository<T,ID> | `day-9: generics` | [Day 9](./daily-tasks/day-09-generics) |
+| Day 10 | Daily Task 10 | Memory Management & Garbage Collection | Completed | Memory Lab: StackOverflowError depth (-Xss), OutOfMemoryError (-Xmx), String += vs StringBuilder benchmark, -Xlog:gc analysis, Integer cache pitfall, Stack/Heap architecture diagram | `day-10: memory-management` | [Day 10](./daily-tasks/day-10-memory-management) |
 
 ## 📁 Repository Directory Structure
 
 ```text
 HCL-Daily-Tasks/
-├── day-01-java-platform-agile/
+├── daily-tasks/day-01-java-platform-agile/
 │   ├── notes/
 │   │   ├── agile-scrum-basics.md
 │   │   └── java-platform-basics.md
 │   ├── src/
 │   │   └── PlatformInfo.java
 │   └── README.md
-├── day-02-language-fundamentals-git/
+├── daily-tasks/day-02-language-fundamentals-git/
 │   ├── notes/
 │   │   ├── git-fundamentals.md
 │   │   └── language-fundamentals.md
 │   ├── src/
 │   │   └── MonthlyUsageAnalyser.java
 │   └── README.md
-├── day-03-control-flow-maven/
+├── daily-tasks/day-03-control-flow-maven/
 │   ├── notes/
 │   │   ├── control-flow.md
 │   │   └── maven-basics.md
@@ -53,14 +53,14 @@ HCL-Daily-Tasks/
 │   │   └── main/java/ATMSimulator.java
 │   ├── pom.xml
 │   └── README.md
-├── day-04-oop-debugging/
+├── daily-tasks/day-04-oop-debugging/
 │   ├── notes/
 │   │   ├── debugging-guide.md
 │   │   └── oop-concepts.md
 │   ├── src/
 │   │   └── com/hcl/bank/BankAccount.java
 │   └── README.md
-├── day-05-inheritance-polymorphism/
+├── daily-tasks/day-05-inheritance-polymorphism/
 │   ├── notes/
 │   │   ├── git-branching-merging.md
 │   │   ├── inheritance.md
@@ -74,7 +74,7 @@ HCL-Daily-Tasks/
 │   │       ├── Refundable.java
 │   │       └── UPIPayment.java
 │   └── README.md
-├── day-06-exception-handling/
+├── daily-tasks/day-06-exception-handling/
 │   ├── deliverables/
 │   │   └── .gitkeep
 │   ├── notes/
@@ -87,7 +87,7 @@ HCL-Daily-Tasks/
 │   │   │   └── InvalidQuantityException.java
 │   │   └── OrderProcessor.java
 │   └── README.md
-├── day-07-collections-framework-part1/
+├── daily-tasks/day-07-collections-framework-part1/
 │   ├── deliverables/
 │   │   └── timing-table.md
 │   ├── notes/
@@ -101,7 +101,7 @@ HCL-Daily-Tasks/
 │   │   ├── service/LibraryWaitlistService.java
 │   │   └── LibraryWaitlistApp.java
 │   └── README.md
-├── day-08-collections-framework-part2/
+├── daily-tasks/day-08-collections-framework-part2/
 │   ├── notes/
 │   │   ├── comparable-vs-comparator.md
 │   │   ├── hashcode-and-equals-contract.md
@@ -111,7 +111,7 @@ HCL-Daily-Tasks/
 │   │   ├── service/EmployeeDirectoryService.java, MissingHashCodeBugDemo.java
 │   │   └── EmployeeDirectory.java
 │   └── README.md
-├── day-09-generics/
+├── daily-tasks/day-09-generics/
 │   ├── data/
 │   │   └── products.csv
 │   ├── notes/

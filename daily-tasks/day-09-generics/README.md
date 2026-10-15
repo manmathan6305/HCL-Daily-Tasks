@@ -57,7 +57,7 @@ Detailed conceptual guides are provided in the `notes/` directory:
 ## Project Structure & Deliverables
 
 ```text
-day-09-generics/
+daily-tasks/day-09-generics/
 ├── data/
 │   └── products.csv                     # Seed data for try-with-resources parsing
 ├── notes/
@@ -85,9 +85,9 @@ day-09-generics/
 
 ## Setup and Run Instructions
 
-1. Navigate to the `day-09-generics` directory:
+1. Navigate to the `daily-tasks/day-09-generics` directory:
    ```bash
-   cd day-09-generics
+   cd daily-tasks/day-09-generics
    ```
 2. Compile all source files:
    ```bash

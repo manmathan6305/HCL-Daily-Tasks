@@ -58,7 +58,7 @@ Detailed conceptual guides are provided in the `notes/` directory:
 ## Project Structure & Deliverables
 
 ```text
-day-10-memory-management/
+daily-tasks/day-10-memory-management/
 ├── deliverables/
 │   └── memory-lab-results.md       # Lab Table + Project Review Notes + Diagram
 ├── notes/
@@ -82,9 +82,9 @@ day-10-memory-management/
 
 ## Setup and Run Instructions
 
-1. Navigate to the `day-10-memory-management` directory:
+1. Navigate to the `daily-tasks/day-10-memory-management` directory:
    ```bash
-   cd day-10-memory-management
+   cd daily-tasks/day-10-memory-management
    ```
 2. Compile all source files:
    ```bash

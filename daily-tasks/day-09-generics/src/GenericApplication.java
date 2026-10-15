@@ -126,7 +126,7 @@ public class GenericApplication {
         Path current = Paths.get("").toAbsolutePath();
         Path csvPath = current.endsWith("day-09-generics")
                 ? Paths.get("data", "products.csv")
-                : Paths.get("day-09-generics", "data", "products.csv");
+                : Paths.get("daily-tasks", "day-09-generics", "data", "products.csv");
 
         List<Product> products = new ArrayList<>();
         System.out.println("Reading seed data from: " + csvPath);
