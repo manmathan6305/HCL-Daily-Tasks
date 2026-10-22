@@ -34,6 +34,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 16 | Daily Task 16 | Concurrency Essentials | Completed | Price Aggregator: fetch prices from 3 simulated slow suppliers (sleep 1-2 s) sequentially, then with ExecutorService + Callable, then with CompletableFuture allOf; handle one supplier failing with exceptionally; compare timings (2.5x speedup) | `day-16: concurrency-essentials` | [Day 16](./daily-tasks/day-16-concurrency-essentials) |
 | Day 17 | Daily Task 17 | Java 9-21 Features + Immutable Collections & Modern APIs | Completed | Shape & Invoice Lab: sealed interface Shape permits Circle, Rectangle, Triangle (records) with exhaustive pattern-matching switch for area; text block invoice email; UnsupportedOperationException on List.of; strip/isBlank sanitization | `day-17: java-9-21-features` | [Day 17](./daily-tasks/day-17-java-9-21-features) |
 | Day 18 | Daily Task 18 | Relational Database Concepts | Completed | Normalization Workshop: flat "college_registrations" spreadsheet normalized step-by-step (0NF -> 1NF -> 2NF -> 3NF) with anomaly proofs; project ER diagram with full cardinalities and keys; NormalizationSimulator | `day-18: relational-database-concepts` | [Day 18](./daily-tasks/day-18-relational-database-concepts) |
+| Day 19 | Daily Task 19 | CRUD Operations | Completed | Employees & departments database: DDL/DML schema, multi-row seed (30 employees, 6 depts), 12 filtering/sorting queries (BETWEEN, LIKE, IN, IS NULL, LIMIT), safe transaction updates, project schema & seed (>= 20 rows per table) | `day-19: crud-operations` | [Day 19](./daily-tasks/day-19-crud-operations) |
 
 ## 📁 Repository Directory Structure
 
@@ -237,6 +238,19 @@ HCL-Daily-Tasks/
 │   │   └── rdbms-vs-nosql-tradeoffs.md
 │   ├── src/
 │   │   └── NormalizationSimulator.java
+│   └── README.md
+├── daily-tasks/day-19-crud-operations/
+│   ├── deliverables/
+│   │   └── query-execution-results.md
+│   ├── notes/
+│   │   ├── ddl-vs-dml-fundamentals.md
+│   │   └── safe-updates-and-filtering-guide.md
+│   ├── sql/
+│   │   ├── project-schema.sql, project-seed.sql
+│   │   ├── queries.sql, schema.sql, seed.sql
+│   ├── src/
+│   │   └── DatabaseRunner.java
+│   ├── test_runner.py
 │   └── README.md
 └── README.md```
 
