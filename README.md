@@ -30,6 +30,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 12 | Daily Task 12 | ASSESSMENT 1 — Core Java Checkpoint | Completed | 3-hr practical: Consolidated application implementing 2 core business flows (Library waitlist dispatch & Enterprise workforce intelligence), warm-up quiz, rubric evaluation (100/100), release tag v1.0-core-java | `day-12: assessment-1` | [Day 12](./daily-tasks/day-12-assessment-1) |
 | Day 13 | Daily Task 13 | Functional Programming | Completed | Product Filter Engine: Composed Predicates (and, or, negate), Function chains (andThen, compose), Consumer reporting, Supplier fallback defaults, 4 kinds of method references, lambda strategy patterns | `day-13: functional-programming` | [Day 13](./daily-tasks/day-13-functional-programming) |
 | Day 14 | Daily Task 14 | Streams API | Completed | Sales Analytics: Revenue by category (groupingBy + summingDouble), top 3 customers, orders partitioned by status, summary statistics, comma-joined product catalog, sequential vs parallel stream benchmark (4.6x speedup) | `day-14: streams-api` | [Day 14](./daily-tasks/day-14-streams-api) |
+| Day 15 | Daily Task 15 | Optional & DateTime | Completed | Subscription Calculator: compute expiry dates, days remaining, grace periods and IST/UTC conversions with java.time; refactor a null-heavy lookup service to return Optional and use orElseThrow with a custom exception | `day-15: optional-date-time` | [Day 15](./daily-tasks/day-15-optional-date-time) |
 
 ## 📁 Repository Directory Structure
 
@@ -129,8 +130,77 @@ HCL-Daily-Tasks/
 │   │   ├── toolkit/Box.java, GenericToolkit.java, Pair.java
 │   │   └── GenericApplication.java
 │   └── README.md
-└── README.md
-```
+├── daily-tasks/day-10-memory-management/
+│   ├── deliverables/
+│   │   └── memory-architecture-diagram.md
+│   ├── notes/
+│   │   ├── garbage-collection-tuning.md
+│   │   ├── jvm-memory-architecture.md
+│   │   └── string-pool-and-wrapper-cache.md
+│   ├── src/
+│   │   ├── benchmark/StringConcatBenchmark.java
+│   │   ├── demo/IntegerCacheTrapDemo.java
+│   │   ├── experiment/HeapOOMSimulation.java, StackOverflowSimulation.java
+│   │   └── MemoryLab.java
+│   └── README.md
+├── daily-tasks/day-11-ai-integration-core-java/
+│   ├── deliverables/
+│   │   ├── ai-code-review-checklist.md
+│   │   └── prompt-comparison.md
+│   ├── notes/
+│   │   ├── ai-code-review-patterns.md
+│   │   └── effective-prompt-engineering.md
+│   ├── src/
+│   │   ├── model/Course.java, Enrollment.java, Student.java
+│   │   ├── service/StudentService.java
+│   │   └── StudentManagementApp.java
+│   └── README.md
+├── daily-tasks/day-12-assessment-1/
+│   ├── deliverables/
+│   │   ├── assessment-1-rubric.md
+│   │   └── warm-up-quiz-answers.md
+│   ├── notes/
+│   │   ├── assessment-brief.md
+│   │   └── core-java-synthesis.md
+│   ├── src/
+│   │   ├── model/
+│   │   ├── service/
+│   │   └── AssessmentApp.java
+│   └── README.md
+├── daily-tasks/day-13-functional-programming/
+│   ├── deliverables/
+│   │   └── lambda-refactoring-guide.md
+│   ├── notes/
+│   │   ├── functional-interfaces-deep-dive.md
+│   │   ├── lambda-internals-and-scopes.md
+│   │   └── method-references-mastery.md
+│   ├── src/
+│   │   ├── model/Product.java, Category.java
+│   │   ├── service/ProductFilterEngine.java
+│   │   └── FunctionalProductApp.java
+│   └── README.md
+├── daily-tasks/day-14-streams-api/
+│   ├── notes/
+│   │   ├── collectors-cheatsheet.md
+│   │   ├── parallel-streams-and-performance.md
+│   │   └── stream-pipeline-internals.md
+│   ├── src/
+│   │   ├── generator/SalesDataGenerator.java
+│   │   ├── model/Order.java, OrderItem.java, OrderStatus.java
+│   │   ├── SalesAnalytics.java
+│   │   └── SalesAnalyticsBenchmark.java
+│   └── README.md
+├── daily-tasks/day-15-optional-date-time/
+│   ├── notes/
+│   │   ├── java-time-api-guide.md
+│   │   └── optional-best-practices.md
+│   ├── src/
+│   │   ├── exception/SubscriptionNotFoundException.java
+│   │   ├── model/Customer.java, Subscription.java, SubscriptionTier.java
+│   │   ├── service/SubscriptionCalculatorService.java, SubscriptionLookupService.java
+│   │   └── SubscriptionCalculator.java
+│   └── README.md
+└── README.md```
 
 ## 🔁 Git Workflow
 ```bash
