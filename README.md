@@ -35,6 +35,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 17 | Daily Task 17 | Java 9-21 Features + Immutable Collections & Modern APIs | Completed | Shape & Invoice Lab: sealed interface Shape permits Circle, Rectangle, Triangle (records) with exhaustive pattern-matching switch for area; text block invoice email; UnsupportedOperationException on List.of; strip/isBlank sanitization | `day-17: java-9-21-features` | [Day 17](./daily-tasks/day-17-java-9-21-features) |
 | Day 18 | Daily Task 18 | Relational Database Concepts | Completed | Normalization Workshop: flat "college_registrations" spreadsheet normalized step-by-step (0NF -> 1NF -> 2NF -> 3NF) with anomaly proofs; project ER diagram with full cardinalities and keys; NormalizationSimulator | `day-18: relational-database-concepts` | [Day 18](./daily-tasks/day-18-relational-database-concepts) |
 | Day 19 | Daily Task 19 | CRUD Operations | Completed | Employees & departments database: DDL/DML schema, multi-row seed (30 employees, 6 depts), 12 filtering/sorting queries (BETWEEN, LIKE, IN, IS NULL, LIMIT), safe transaction updates, project schema & seed (>= 20 rows per table) | `day-19: crud-operations` | [Day 19](./daily-tasks/day-19-crud-operations) |
+| Day 20 | Daily Task 20 | Joins & Aggregations | Completed | E-commerce reporting: 10 queries (LEFT JOIN + IS NULL for zero-order customers, revenue per category, HAVING threshold filters, employee-manager self-join, UNION catalog, COUNT(*) vs COUNT(col)), 5 project reports with GROUP BY/HAVING | `day-20: joins-aggregations` | [Day 20](./daily-tasks/day-20-joins-aggregations) |
 
 ## 📁 Repository Directory Structure
 
@@ -250,6 +251,19 @@ HCL-Daily-Tasks/
 │   │   ├── queries.sql, schema.sql, seed.sql
 │   ├── src/
 │   │   └── DatabaseRunner.java
+│   ├── test_runner.py
+│   └── README.md
+├── daily-tasks/day-20-joins-aggregations/
+│   ├── deliverables/
+│   │   └── reporting-results.md
+│   ├── notes/
+│   │   ├── aggregations-group-by-having.md
+│   │   └── sql-joins-visual-guide.md
+│   ├── sql/
+│   │   ├── joins.sql, project-reports.sql
+│   │   ├── schema.sql, seed.sql
+│   ├── src/
+│   │   └── JoinReportsRunner.java
 │   ├── test_runner.py
 │   └── README.md
 └── README.md```
