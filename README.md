@@ -37,6 +37,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 19 | Daily Task 19 | CRUD Operations | Completed | Employees & departments database: DDL/DML schema, multi-row seed (30 employees, 6 depts), 12 filtering/sorting queries (BETWEEN, LIKE, IN, IS NULL, LIMIT), safe transaction updates, project schema & seed (>= 20 rows per table) | `day-19: crud-operations` | [Day 19](./daily-tasks/day-19-crud-operations) |
 | Day 20 | Daily Task 20 | Joins & Aggregations | Completed | E-commerce reporting: 10 queries (LEFT JOIN + IS NULL for zero-order customers, revenue per category, HAVING threshold filters, employee-manager self-join, UNION catalog, COUNT(*) vs COUNT(col)), 5 project reports with GROUP BY/HAVING | `day-20: joins-aggregations` | [Day 20](./daily-tasks/day-20-joins-aggregations) |
 | Day 21 | Daily Task 21 | Views, Indexing & Constraints | Completed | Constraints test suite (CHECK, UNIQUE, NOT NULL, DEFAULT, ON DELETE CASCADE/RESTRICT proven with failing inserts), composite index with before/after EXPLAIN query plan analysis (Table Scan vs Index Search), 2 reporting/security views | `day-21: views-indexing-constraints` | [Day 21](./daily-tasks/day-21-views-indexing-constraints) |
+| Day 22 | Daily Task 22 | Transactions | Completed | Bank Transfer Lab: money transfer with COMMIT, forced failure with ROLLBACK proving consistency, nested savepoints, two-session lost update reproduction and resolution using pessimistic row locking (SELECT ... FOR UPDATE) | `day-22: transactions` | [Day 22](./daily-tasks/day-22-transactions) |
 
 ## 📁 Repository Directory Structure
 
@@ -278,6 +279,20 @@ HCL-Daily-Tasks/
 │   │   ├── constraints.sql, project-constraints.sql
 │   ├── src/
 │   │   └── ConstraintValidatorRunner.java
+│   ├── test_runner.py
+│   └── README.md
+├── daily-tasks/day-22-transactions/
+│   ├── deliverables/
+│   │   ├── acid-verification-report.md
+│   │   └── two-session-concurrency-drill.md
+│   ├── notes/
+│   │   ├── acid-properties-and-isolation-levels.md
+│   │   └── pessimistic-vs-optimistic-locking.md
+│   ├── sql/
+│   │   ├── critical-project-transaction.sql
+│   │   └── transactions.sql
+│   ├── src/
+│   │   └── BankTransferSimulation.java
 │   ├── test_runner.py
 │   └── README.md
 └── README.md```
