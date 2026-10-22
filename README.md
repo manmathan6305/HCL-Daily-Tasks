@@ -36,6 +36,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 18 | Daily Task 18 | Relational Database Concepts | Completed | Normalization Workshop: flat "college_registrations" spreadsheet normalized step-by-step (0NF -> 1NF -> 2NF -> 3NF) with anomaly proofs; project ER diagram with full cardinalities and keys; NormalizationSimulator | `day-18: relational-database-concepts` | [Day 18](./daily-tasks/day-18-relational-database-concepts) |
 | Day 19 | Daily Task 19 | CRUD Operations | Completed | Employees & departments database: DDL/DML schema, multi-row seed (30 employees, 6 depts), 12 filtering/sorting queries (BETWEEN, LIKE, IN, IS NULL, LIMIT), safe transaction updates, project schema & seed (>= 20 rows per table) | `day-19: crud-operations` | [Day 19](./daily-tasks/day-19-crud-operations) |
 | Day 20 | Daily Task 20 | Joins & Aggregations | Completed | E-commerce reporting: 10 queries (LEFT JOIN + IS NULL for zero-order customers, revenue per category, HAVING threshold filters, employee-manager self-join, UNION catalog, COUNT(*) vs COUNT(col)), 5 project reports with GROUP BY/HAVING | `day-20: joins-aggregations` | [Day 20](./daily-tasks/day-20-joins-aggregations) |
+| Day 21 | Daily Task 21 | Views, Indexing & Constraints | Completed | Constraints test suite (CHECK, UNIQUE, NOT NULL, DEFAULT, ON DELETE CASCADE/RESTRICT proven with failing inserts), composite index with before/after EXPLAIN query plan analysis (Table Scan vs Index Search), 2 reporting/security views | `day-21: views-indexing-constraints` | [Day 21](./daily-tasks/day-21-views-indexing-constraints) |
 
 ## 📁 Repository Directory Structure
 
@@ -264,6 +265,19 @@ HCL-Daily-Tasks/
 │   │   ├── schema.sql, seed.sql
 │   ├── src/
 │   │   └── JoinReportsRunner.java
+│   ├── test_runner.py
+│   └── README.md
+├── daily-tasks/day-21-views-indexing-constraints/
+│   ├── deliverables/
+│   │   ├── constraint-test-results.md
+│   │   └── explain-analysis-report.md
+│   ├── notes/
+│   │   ├── database-constraints-and-views.md
+│   │   └── database-indexing-and-explain.md
+│   ├── sql/
+│   │   ├── constraints.sql, project-constraints.sql
+│   ├── src/
+│   │   └── ConstraintValidatorRunner.java
 │   ├── test_runner.py
 │   └── README.md
 └── README.md```
