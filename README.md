@@ -26,6 +26,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 8 | Daily Task 8 | Collections Framework — Part 2 | Completed | Employee Directory: HashMap lookup, frequency count with merge, TreeMap department report, Comparable by id, top 5 salary Comparator chain, missing-hashCode bug demo and fix | `day-8: collections framework` | [Day 8](./daily-tasks/day-08-collections-framework-part2) |
 | Day 9 | Daily Task 9 | Generics & Try-With-Resources | Completed | Generic Toolkit: Pair<K,V>, Box<T extends Number>, <T extends Comparable<T>> max(), PECS wildcards, CSV ingestion with try-with-resources, AutoCloseable LIFO close order, generic CrudRepository<T,ID> | `day-9: generics` | [Day 9](./daily-tasks/day-09-generics) |
 | Day 10 | Daily Task 10 | Memory Management & Garbage Collection | Completed | Memory Lab: StackOverflowError depth (-Xss), OutOfMemoryError (-Xmx), String += vs StringBuilder benchmark, -Xlog:gc analysis, Integer cache pitfall, Stack/Heap architecture diagram | `day-10: memory-management` | [Day 10](./daily-tasks/day-10-memory-management) |
+| Day 11 | Daily Task 11 | AI Integration (Core Java) | Completed | Prompt & Review Drill: Vague vs Specific prompt comparison, review checklist for AI code, 5 critical issues found & fixed, StudentService, Course Enrollment (FR7), Academic Transcript (FR8) | `day-11: ai-integration-core-java` | [Day 11](./daily-tasks/day-11-ai-integration-core-java) |
 
 ## 📁 Repository Directory Structure
 
