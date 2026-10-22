@@ -31,6 +31,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 13 | Daily Task 13 | Functional Programming | Completed | Product Filter Engine: Composed Predicates (and, or, negate), Function chains (andThen, compose), Consumer reporting, Supplier fallback defaults, 4 kinds of method references, lambda strategy patterns | `day-13: functional-programming` | [Day 13](./daily-tasks/day-13-functional-programming) |
 | Day 14 | Daily Task 14 | Streams API | Completed | Sales Analytics: Revenue by category (groupingBy + summingDouble), top 3 customers, orders partitioned by status, summary statistics, comma-joined product catalog, sequential vs parallel stream benchmark (4.6x speedup) | `day-14: streams-api` | [Day 14](./daily-tasks/day-14-streams-api) |
 | Day 15 | Daily Task 15 | Optional & DateTime | Completed | Subscription Calculator: compute expiry dates, days remaining, grace periods and IST/UTC conversions with java.time; refactor a null-heavy lookup service to return Optional and use orElseThrow with a custom exception | `day-15: optional-date-time` | [Day 15](./daily-tasks/day-15-optional-date-time) |
+| Day 16 | Daily Task 16 | Concurrency Essentials | Completed | Price Aggregator: fetch prices from 3 simulated slow suppliers (sleep 1-2 s) sequentially, then with ExecutorService + Callable, then with CompletableFuture allOf; handle one supplier failing with exceptionally; compare timings (2.5x speedup) | `day-16: concurrency-essentials` | [Day 16](./daily-tasks/day-16-concurrency-essentials) |
 
 ## 📁 Repository Directory Structure
 
@@ -199,6 +200,18 @@ HCL-Daily-Tasks/
 │   │   ├── model/Customer.java, Subscription.java, SubscriptionTier.java
 │   │   ├── service/SubscriptionCalculatorService.java, SubscriptionLookupService.java
 │   │   └── SubscriptionCalculator.java
+│   └── README.md
+├── daily-tasks/day-16-concurrency-essentials/
+│   ├── deliverables/
+│   │   └── timing-comparison.md
+│   ├── notes/
+│   │   ├── completable-future-guide.md
+│   │   └── executors-and-thread-pools.md
+│   ├── src/
+│   │   ├── model/SupplierQuote.java
+│   │   ├── service/CompletablePriceAggregator.java, ExecutorPriceAggregator.java, SequentialAggregator.java
+│   │   ├── supplier/SlowSupplier.java, SupplierClient.java
+│   │   └── PriceAggregator.java
 │   └── README.md
 └── README.md```
 
