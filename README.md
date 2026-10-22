@@ -29,6 +29,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 11 | Daily Task 11 | AI Integration (Core Java) | Completed | Prompt & Review Drill: Vague vs Specific prompt comparison, review checklist for AI code, 5 critical issues found & fixed, StudentService, Course Enrollment (FR7), Academic Transcript (FR8) | `day-11: ai-integration-core-java` | [Day 11](./daily-tasks/day-11-ai-integration-core-java) |
 | Day 12 | Daily Task 12 | ASSESSMENT 1 — Core Java Checkpoint | Completed | 3-hr practical: Consolidated application implementing 2 core business flows (Library waitlist dispatch & Enterprise workforce intelligence), warm-up quiz, rubric evaluation (100/100), release tag v1.0-core-java | `day-12: assessment-1` | [Day 12](./daily-tasks/day-12-assessment-1) |
 | Day 13 | Daily Task 13 | Functional Programming | Completed | Product Filter Engine: Composed Predicates (and, or, negate), Function chains (andThen, compose), Consumer reporting, Supplier fallback defaults, 4 kinds of method references, lambda strategy patterns | `day-13: functional-programming` | [Day 13](./daily-tasks/day-13-functional-programming) |
+| Day 14 | Daily Task 14 | Streams API | Completed | Sales Analytics: Revenue by category (groupingBy + summingDouble), top 3 customers, orders partitioned by status, summary statistics, comma-joined product catalog, sequential vs parallel stream benchmark (4.6x speedup) | `day-14: streams-api` | [Day 14](./daily-tasks/day-14-streams-api) |
 
 ## 📁 Repository Directory Structure
 
