@@ -32,6 +32,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 14 | Daily Task 14 | Streams API | Completed | Sales Analytics: Revenue by category (groupingBy + summingDouble), top 3 customers, orders partitioned by status, summary statistics, comma-joined product catalog, sequential vs parallel stream benchmark (4.6x speedup) | `day-14: streams-api` | [Day 14](./daily-tasks/day-14-streams-api) |
 | Day 15 | Daily Task 15 | Optional & DateTime | Completed | Subscription Calculator: compute expiry dates, days remaining, grace periods and IST/UTC conversions with java.time; refactor a null-heavy lookup service to return Optional and use orElseThrow with a custom exception | `day-15: optional-date-time` | [Day 15](./daily-tasks/day-15-optional-date-time) |
 | Day 16 | Daily Task 16 | Concurrency Essentials | Completed | Price Aggregator: fetch prices from 3 simulated slow suppliers (sleep 1-2 s) sequentially, then with ExecutorService + Callable, then with CompletableFuture allOf; handle one supplier failing with exceptionally; compare timings (2.5x speedup) | `day-16: concurrency-essentials` | [Day 16](./daily-tasks/day-16-concurrency-essentials) |
+| Day 17 | Daily Task 17 | Java 9-21 Features + Immutable Collections & Modern APIs | Completed | Shape & Invoice Lab: sealed interface Shape permits Circle, Rectangle, Triangle (records) with exhaustive pattern-matching switch for area; text block invoice email; UnsupportedOperationException on List.of; strip/isBlank sanitization | `day-17: java-9-21-features` | [Day 17](./daily-tasks/day-17-java-9-21-features) |
 
 ## 📁 Repository Directory Structure
 
@@ -212,6 +213,19 @@ HCL-Daily-Tasks/
 │   │   ├── service/CompletablePriceAggregator.java, ExecutorPriceAggregator.java, SequentialAggregator.java
 │   │   ├── supplier/SlowSupplier.java, SupplierClient.java
 │   │   └── PriceAggregator.java
+│   └── README.md
+├── daily-tasks/day-17-java-9-21-features/
+│   ├── deliverables/
+│   │   └── modern-features-breakdown.md
+│   ├── notes/
+│   │   ├── modern-java-syntax-updates.md
+│   │   └── records-and-sealed-classes.md
+│   ├── src/
+│   │   ├── collection/ImmutableCollectionLab.java
+│   │   ├── input/UserInputCleaner.java
+│   │   ├── invoice/Invoice.java, InvoiceItem.java, InvoiceTemplateService.java
+│   │   ├── shape/Circle.java, Rectangle.java, Shape.java, ShapeCalculator.java, Triangle.java
+│   │   └── ModernJavaLab.java
 │   └── README.md
 └── README.md```
 
