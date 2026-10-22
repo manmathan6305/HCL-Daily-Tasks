@@ -27,6 +27,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | Day 9 | Daily Task 9 | Generics & Try-With-Resources | Completed | Generic Toolkit: Pair<K,V>, Box<T extends Number>, <T extends Comparable<T>> max(), PECS wildcards, CSV ingestion with try-with-resources, AutoCloseable LIFO close order, generic CrudRepository<T,ID> | `day-9: generics` | [Day 9](./daily-tasks/day-09-generics) |
 | Day 10 | Daily Task 10 | Memory Management & Garbage Collection | Completed | Memory Lab: StackOverflowError depth (-Xss), OutOfMemoryError (-Xmx), String += vs StringBuilder benchmark, -Xlog:gc analysis, Integer cache pitfall, Stack/Heap architecture diagram | `day-10: memory-management` | [Day 10](./daily-tasks/day-10-memory-management) |
 | Day 11 | Daily Task 11 | AI Integration (Core Java) | Completed | Prompt & Review Drill: Vague vs Specific prompt comparison, review checklist for AI code, 5 critical issues found & fixed, StudentService, Course Enrollment (FR7), Academic Transcript (FR8) | `day-11: ai-integration-core-java` | [Day 11](./daily-tasks/day-11-ai-integration-core-java) |
+| Day 12 | Daily Task 12 | ASSESSMENT 1 — Core Java Checkpoint | Completed | 3-hr practical: Consolidated application implementing 2 core business flows (Library waitlist dispatch & Enterprise workforce intelligence), warm-up quiz, rubric evaluation (100/100), release tag v1.0-core-java | `day-12: assessment-1` | [Day 12](./daily-tasks/day-12-assessment-1) |
 
 ## 📁 Repository Directory Structure
 
